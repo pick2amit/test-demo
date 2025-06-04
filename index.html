@@ -76,6 +76,21 @@ body {
   <p>Resize the browser window to see the effect.</p>
   <p>Some content..</p>
 </div>
+<div>
+  <h2>Feedback Form</h2>
+    <form action="/submit-feedback" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
 
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="feedback">Your Feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="40" required></textarea><br><br>
+
+        <button type="submit" id="submitBtn">Submit</button>
+    </form>
+</div>
+  
 </body>
 </html>
